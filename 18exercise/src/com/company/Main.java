@@ -17,12 +17,17 @@ public class Main {
 
         double salary;
         int antiquityYears;
+<<<<<<< HEAD
         double  bono;
+=======
+        double bono;
+>>>>>>> feature/18exercise
 
         System.out.println("Ingrese el salario del empleado");
         salary = keyboard.nextDouble();
 
         System.out.println("Ingrese sus años laborados en la compañia");
+<<<<<<< HEAD
         antiquityYears= keyboard.nextInt();
 
         //calculo del bono
@@ -33,6 +38,18 @@ public class Main {
         }else{
 
             bono = salary*0.2;
+=======
+        antiquityYears = keyboard.nextInt();
+
+        //calculo del bono
+
+        if (antiquityYears > 4 || salary < 2000) {
+
+            bono = salary * 0.25;
+        } else {
+
+            bono = salary * 0.2;
+>>>>>>> feature/18exercise
         }
 
         System.out.println("El bono de fin de año que le corresponde es de $" + bono);
